@@ -1,0 +1,20 @@
+h1.product-name {
+  text-transform: capitalize;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.panel-main{
+	width:50%;
+	margin:2em auto;
+	.converter-item{
+	width:80%;
+	margin:1.5em auto;
+	}
+}

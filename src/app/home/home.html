@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="panel panel-default panel-main">
+        <div class="panel-heading">AUD - US</div>
+        <div class="panel-body">
+        	<h5 class="text-center"> 1 AUD = {{rates}} USD </h5>
+            <div class="input-group col-xs-12 converter-item">
+                <label for="baseInput"></label>
+                <div class="input-group"><span class="input-group-btn">
+      <button class="btn btn-default" data-target="#baseInput" data-value="-1" ng-disabled="base-1<0" data-toggle="spinner" ng-click="refresh(base=base-1)"><span class="glyphicon glyphicon-minus"></span></button>
+                    </span>
+                    <input class="form-control input-number ng-pristine ng-valid ng-touched" ng-model="base" id="baseInput" name="baseInput" type="number" data-ride="spinner" data-min="i" min='0' ng-change="refresh(base)" /><span class="input-group-btn">
+      <button class="btn btn-default" data-target="#baseInput" data-value="1" data-toggle="spinner" ng-click="refresh(base=base+1)"><span class="glyphicon glyphicon-plus"></span></button>
+                    </span>
+                </div>
+            </div>
+            <div class="input-group col-xs-12 converter-item">
+                <span class="input-group-addon">$</span>
+                <input type="text" ng-model="result" class="form-control" ng-readonly='true'>
+                <span class="input-group-addon"></span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+/******************************************************************
+
+ Angular Boilderplate
+
+******************************************************************/
+/* Partials */
+@import "vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "partials/variables";
+@import "vendor/font-awesome-sass/assets/stylesheets/_font-awesome.scss";
+
+
+/* Modules */
+@import "modules/main";
+@import "modules/home";
+@import "modules/rating";
